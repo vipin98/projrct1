@@ -1,0 +1,159 @@
+body{
+    background-color: #f6f7fb;
+    font-family: 'Poppins', sans-serif;
+}
+#topbar{
+    width: 100%;
+    height: 64px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px  solid #E5E6E8;
+    z-index: 1;
+    
+   
+  
+}
+#logo{
+    padding-right: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+ img{
+ margin-top: 12px;
+}
+a{
+    text-decoration: none;
+}
+.mainMenu{
+    padding-left: 52px;
+    font-size: 20px;
+    
+}
+.menu{
+   padding-left: 12px;
+}
+#Logout{
+    padding-right: 32px;
+    cursor: pointer;
+}
+.Orderpage{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.Filteritem{
+  display: flex;
+  align-items: center;
+ 
+}
+.OrderpageRight{
+    margin-top: 70px;
+    width: 70%;
+}
+.Ordertable{
+    width: 100%;
+   
+    text-align: center;
+    border-collapse: collapse;
+    padding-bottom: 12px;
+}
+.Ordertablebody{
+    width: 100%;
+    height: 60px;
+    padding:30px;
+    text-align: center;
+   border-collapse: collapse;
+   border-bottom: 1px solid #cccc;
+   background-color: #FFFFFF;
+ 
+}
+.Ordertabledata{
+margin-bottom: 140px;
+}
+tbody{
+    
+}
+
+
+#table-headers {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* overflow: hidden; */
+  }
+  
+  #table-data {
+    height: auto;
+   
+  }
+  
+  @-moz-document url-prefix() {
+    #table-data {
+      /* overflow-y: scroll; */
+    }
+  }
+  
+  #table-data tr {
+    cursor: pointer;
+  }
+  
+  #table-data tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  th {
+    font-size: 18px;
+    color: black;
+    line-height: 1.4;
+    background-color:#FFFFFF;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  
+  td {
+    font-size: 16px;
+    color: #808080;
+    line-height: 1.4;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .column1 {
+    width: 50px;
+  }
+  
+  .column2 {
+    width: 170px;
+  }
+  
+  .column3 {
+    width: 170px;
+  }
+  
+  .column4 {
+    width: 170px;
+  }
+  
+  .column5 {
+    width: 300px;
+  }
+  
+  .active {
+    background-color: lightseagreen !important;
+  }
+  
+  .active td {
+    color: black;
+  }

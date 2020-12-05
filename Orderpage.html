@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders  page</title>
+    <link rel="stylesheet" href="./Orderpage.css" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        </style>
+</head>
+<body>
+    <div id="topbar">
+        <div class="mainMenu">
+            <a id="logo">
+               <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" height=20/> Kafene</a>
+            <a href="Orderpage.html" class="menu">orders</a>
+            <a href="Productpage.html" class="menu">Products</a>
+            <a href="Userspage.html" class="menu">Users</a> 
+        </div>
+        <div id="Logout">Logout</div>
+    </div>
+    <div class="Orderpage">
+        <div class="OrderpageLeft">
+       <h1>Orders</h1>
+       <h3>Filters</h3>
+       <h3>Count: 0</h3>
+      <div class="Filteritem"><input  id="New" type="checkbox" /> <p>New</p></div> 
+      <div class="Filteritem"><input  id="Packed" type="checkbox" /> <p>Packed</p></div> 
+      <div class="Filteritem"><input  id="InTransit" type="checkbox" /> <p>InTransit</p></div> 
+      <div class="Filteritem"><input  id="Delivered" type="checkbox" /> <p>Delivered</p></div> 
+     </div>
+     
+      <div class="OrderpageRight">
+        <div id="table-section">
+
+        
+        
+            <div id="table-wrapper">
+        
+              <div id="table-headers">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="column1">Id</th>
+                      <th class="column2">Customer</th>
+                      <th class="column3">Date</th>
+                      <th class="column4">Amount</th>
+                      <th class="column5">Status</th>
+                     
+                      
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+        
+              <div id="table-data">
+                <table>
+                  <tbody id=table-body>
+                    <!-- <tr class="data-row">
+                                        <td class="column1">28</td>
+                                        <td class="column2">Larisa</td>
+                                        <td class="column3">Llaneza</td>
+                                        <td class="column4">SCallison@non.org</td>
+                                        <td class="column5">(763)248-9034</td>
+                                    </tr>
+                    
+                                  
+                                    
+                                    <tr class="data-row">
+                                        <td class="column1">856</td>
+                                        <td class="column2">Yeqing</td>
+                                        <td class="column3">Elshoff</td>
+                                        <td class="column4">RKimmel@tincidunt.com</td>
+                                        <td class="column5">(230)488-3157</td>
+                                    </tr> -->
+        
+                  </tbody>
+                </table>
+              </div>
+        
+            </div>
+        
+          </div>
+           
+      </div>
+    </div>
+    
+    <script src="./Orderpage.js"></script>
+</body>
+</html>
