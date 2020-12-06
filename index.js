@@ -13,7 +13,7 @@ $(function () {
                     if(response ){
                        alert("Login sucessfull");
                        localStorage.setItem('login',true)
-                       location.href="/Orderpage.html"
+                       location.href="Orderpage.html"
 
                     }
 
