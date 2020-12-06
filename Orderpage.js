@@ -2,12 +2,13 @@
 var Logout = document.getElementById("Logout");
 Logout.addEventListener("click",function(){
             localStorage.setItem('login',false)
-            location.href="/Loginpage.html"
+            location.href="/index.html"
             
         });
 
 var table = document.getElementById("table-body");
 var infoContent = document.getElementById("info-content");
+var count = document.getElementById("count");
 
 
 function createTable(id, Customer,date, Amount, Status,time){
@@ -82,28 +83,122 @@ http.onreadystatechange = function(){
     var searchBox3 = document.getElementById("InTransit")
     var searchBox4 = document.getElementById("Delivered")
 var tableSearch = document.getElementsByClassName("data-row")
+
+// new search
 New.addEventListener("click", function () {
     values = searchBox.checked
-    value1= searchBox2.checked
-    console.log(value1)
+
     for (i = 0; i < tableSearch.length; i++) {
       
         
        tableSearch[i].style.display = "none"
        if ( values === true) {
       var name=  document.getElementsByClassName("coloum5")[i].innerText ;
+      var count = document.getElementById("count").innerText;
+      console.log(count)
      if(name ==="New"){
-        tableSearch[i].style.display = "none"
+        tableSearch[i].style.display = ""
         
+        document.getElementById("count").innerText = tableSearch.length- i
+
      }
     else{
-        tableSearch[i].style.display = ""
+        tableSearch[i].style.display = "none"
+       
     }
 
     }
-    
-  
-    
+    else{
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = 0
+    } 
+    }
+   
+
+});
+
+// packed 
+Packed.addEventListener("click", function () {
+    value1 = searchBox2.checked
+
+    for (i = 0; i < tableSearch.length; i++) {
+      
+        
+     
+       if ( value1 === true) {
+      var name=  document.getElementsByClassName("coloum5")[i].innerText ;
+     if(name ==="Packed"){
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = tableSearch.length- i
+     }
+    else{
+        tableSearch[i].style.display = "none"
+    }
+
+    }
+    else{
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = 0
+    } 
+    }
+   
+
+});
+// InTransit
+
+InTransit.addEventListener("click", function () {
+    value2 = searchBox3.checked
+
+    for (i = 0; i < tableSearch.length; i++) {
+      
+        
+      
+       if ( value2 === true) {
+      var name=  document.getElementsByClassName("coloum5")[i].innerText ;
+     if(name ==="InTransit"){
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = tableSearch.length- i
+     }
+    else{
+        tableSearch[i].style.display = "none"
+    }
+
+    }
+    else{
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = 0
+    } 
+    }
+   
+
+});
+
+// Delivered
+
+Delivered.addEventListener("click", function () {
+    value3 = searchBox4.checked
+
+    for (i = 0; i < tableSearch.length; i++) {
+      
+        
+      
+       if ( value3 === true) {
+      var name=  document.getElementsByClassName("coloum5")[i].innerText ;
+     if(name ==="Delivered"){
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = tableSearch.length- i
+     }
+    else{
+       
+        tableSearch[i].style.display = "none"
+        
+    }
+
+    }
+    else{
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = 0
+    } 
     }
    
 

@@ -1,3 +1,13 @@
+
+
+var Logout = document.getElementById("Logout");
+Logout.addEventListener("click",function(){
+            localStorage.setItem('login',false)
+            location.href="/index.html"
+            
+        });
+
+
 var table = document.getElementById("table-body");
 var infoContent = document.getElementById("info-content");
 
@@ -60,7 +70,7 @@ http.onreadystatechange = function(){
      var response = JSON.parse(http.responseText);
         for(var i=0; i<response.length; i++){
             id = response[i]["id"]
-            ProductName=response[i]["Miconazole Nitrate"]
+            ProductName=response[i]["medicineName"]
             ProductBrand = response[i]["medicineBrand"]
             ExpiryDate = response[i]["expiryDate"]
             UnitPrice = response[i]["unitPrice"]
@@ -78,26 +88,71 @@ http.onreadystatechange = function(){
     }
     var searchBox = document.getElementById("search1")
     var searchBox2 = document.getElementById("search2")
+   var  value2 = searchBox.checked
+  var  value1 = searchBox2.checked
    
 var tableSearch = document.getElementsByClassName("data-row")
-searchBox2.addEventListener("click", function () {
-    values = searchBox2.checked
+// Exprie
+search1.addEventListener("click", function () {
+    value2 = searchBox.checked
   
-    console.log(values)
+    console.log(value2)
     for (i = 0; i < tableSearch.length; i++) {
       
         
-       tableSearch[i].style.display = "none"
-       if ( values === true) {
-      var name=  document.getElementsByClassName("coloum6")[i].innerText ;
-     if(name >= 100){
-        tableSearch[i].style.display = "none"
-        
+      
+       if ( value2 === true) {
+      var name=  document.getElementsByClassName("coloum4")[i].innerText ;
+     
+     if(name[9]   == 1){
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = tableSearch.length- i
      }
     else{
-        tableSearch[i].style.display = ""
+        tableSearch[i].style.display = "none"
     }
 
+    }
+    // else if ( value1 === true){
+    //     tableSearch[i].style.display = ""
+    // }
+   
+    else{
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = 0
+    }
+    
+    
+  
+    
+    }
+   
+
+});
+// low stock
+search2.addEventListener("click", function () {
+    value1 = searchBox2.checked
+  
+    console.log(value1)
+    for (i = 0; i < tableSearch.length; i++) {
+      
+        
+      
+       if ( value1 === true) {
+      var name=  document.getElementsByClassName("coloum6")[i].innerText ;
+     if(name <= 100){
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = tableSearch.length- i
+     }
+    else{
+        tableSearch[i].style.display = "none"
+    }
+
+    }
+    
+    else{
+        tableSearch[i].style.display = ""
+        document.getElementById("count").innerText = 0
     }
     
     
