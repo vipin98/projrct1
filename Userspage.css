@@ -36,7 +36,8 @@ a{
     
 }
 .menu{
-   padding-left: 12px;
+  padding-left: 8px;
+  padding-bottom: 12px;
 }
 #Logout{
     padding-right: 32px;
@@ -177,11 +178,9 @@ margin-bottom: 140px;
   .column5 {
     width: 100px;
   }
-  
-  .active {
-    background-color: lightseagreen !important;
+  #active  {
+    color: lightseagreen ;
+    border-bottom: 3px solid #20b883;
   }
   
-  .active td {
-    color: black;
-  }
+ 

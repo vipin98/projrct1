@@ -15,7 +15,7 @@
         <div class="mainMenu">
             <a id="logo">
                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" height=20/> Kafene</a>
-            <a href="Orderpage.html" class="menu">orders</a>
+            <a href="Orderpage.html" class="menu" id="active">orders</a>
             <a href="Productpage.html" class="menu">Products</a>
             <a href="Userspage.html" class="menu">Users</a> 
         </div>
@@ -25,7 +25,7 @@
         <div class="OrderpageLeft">
        <h1>Orders</h1>
        <h3>Filters</h3>
-       <h3>Count: 0</h3>
+       <h3 >Count: <span id="count">0</span></h3>
       <div class="Filteritem"><input  id="New" type="checkbox" /> <p>New</p></div> 
       <div class="Filteritem"><input  id="Packed" type="checkbox" /> <p>Packed</p></div> 
       <div class="Filteritem"><input  id="InTransit" type="checkbox" /> <p>InTransit</p></div> 

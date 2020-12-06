@@ -1,3 +1,11 @@
+var Logout = document.getElementById("Logout");
+Logout.addEventListener("click",function(){
+            localStorage.setItem('login',false)
+            location.href="index.html"
+            
+        });
+
+
 var table = document.getElementById("table-body");
 var infoContent = document.getElementById("info-content");
 

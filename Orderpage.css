@@ -31,11 +31,13 @@ a{
 }
 .mainMenu{
     padding-left: 52px;
+    
     font-size: 20px;
     
 }
 .menu{
-   padding-left: 12px;
+   padding-left: 8px;
+   padding-bottom: 12px;
 }
 #Logout{
     padding-right: 32px;
@@ -150,10 +152,9 @@ tbody{
     width: 300px;
   }
   
-  .active {
-    background-color: lightseagreen !important;
-  }
+ 
   
-  .active td {
-    color: black;
+  #active  {
+    color: lightseagreen ;
+    border-bottom: 3px solid #20b883;
   }

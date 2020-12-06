@@ -34,7 +34,8 @@ a{
     font-size: 20px;
 }
 .menu{
-   padding-left: 12px;
+   padding-left: 8px;
+   padding-bottom: 12px;
 }
 #Logout{
     padding-right: 32px;
@@ -54,7 +55,7 @@ a{
 }
 .ProductspageRight{
     margin-top: 70px;
-    width: 70%;
+    width: 75%;
 }
 .Productstable{
     width: 100%;
@@ -90,11 +91,7 @@ margin-bottom: 140px;
    
   }
   
-  @-moz-document url-prefix() {
-    #table-data {
-      /* overflow-y: scroll; */
-    }
-  }
+  
   
   #table-data tr {
     cursor: pointer;
@@ -130,29 +127,30 @@ margin-bottom: 140px;
   }
   
   .column1 {
-    width: 50px;
+    width: 150px;
   }
   
   .column2 {
-    width: 170px;
+    width: 200px;
   }
   
   .column3 {
-    width: 170px;
+    width: 270px;
   }
   
   .column4 {
-    width: 170px;
+    width: 220px;
   }
   
   .column5 {
-    width: 300px;
+    width: 400;
+  }
+  .column6 {
+    width: 400;
   }
   
-  .active {
-    background-color: lightseagreen !important;
+  #active  {
+    color: lightseagreen ;
+    border-bottom: 3px solid #20b883;
   }
-  
-  .active td {
-    color: black;
-  }
+ 
